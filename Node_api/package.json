@@ -1,0 +1,20 @@
+{
+  "name": "node_api",
+  "version": "1.0.0",
+  "description": "Building RESTful APIs with Node and Express",
+  "main": "index.html",
+  "scripts": {
+    "test": "apptest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ACBaloi"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "api"
+  ],
+  "author": "Ana Baloi",
+  "license": "ISC"
+}

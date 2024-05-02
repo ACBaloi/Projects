@@ -1,0 +1,19 @@
+{
+  "name": "node_events",
+  "version": "1.0.0",
+  "description": "for education purposes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ACBaloi"
+  },
+  "keywords": [
+    "basic-node-server"
+  ],
+  "author": "Ana Baloi",
+  "license": "ISC"
+}
