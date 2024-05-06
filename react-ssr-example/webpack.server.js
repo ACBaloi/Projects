@@ -19,3 +19,6 @@ module.exports = {
         ]
     }
 };
+
+//with this configuration, the transpiled server bundle will be output to the server-build folder in a file called index.js
+// Note the use of target: node and externals: [nodeExternals()] from webpack-node-externals, which will omit the files from node_modules in the bundle; the server can acces these files directly
