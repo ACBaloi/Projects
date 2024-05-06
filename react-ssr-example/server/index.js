@@ -31,3 +31,7 @@ app.use(express.static('./build'));
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
 })
+
+//Express is used to serve contents from the build directory as static files.
+//ReactDOMServer's renderToString is used to render the app to a static HTML string
+// The static index.html fie from the built client app is read. The app's static content is injected into the <div> with an id of "root". This is sent as response to the request.
