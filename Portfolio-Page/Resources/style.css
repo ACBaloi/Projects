@@ -131,21 +131,35 @@ main {
     text-justify: inter-word;
 }
 
+/*.about h2 a, .about p {
+    display: none;
+}
+*/
 
 .card {
-    max-width: 40%;
-    max-height: 30%;
+    max-width: 15%;
+    max-height: 5%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
     transition: 0.3s;
-  }
-  .card:hover {
+}
+
+.card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: translate(0px, -3px);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.card-img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
   }
   
-  .container {
-    padding: 2px 16px;
+  .card-img ~ * {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
-
-
-
 
