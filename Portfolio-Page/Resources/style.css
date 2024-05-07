@@ -8,11 +8,13 @@
 }
 
 body {
-    background-image: linear-gradient(to top, #b8cee4 0%, white 100%);
+    background: color #faf9f6;;
 } 
 
 a {
     text-decoration: none;
+    color: #6200EE;
+    font-weight: 500;
 }
 
 .btn {
@@ -26,14 +28,14 @@ a {
     font-weight: 500;
     transition: all 0.4s ease-in-out;
     background-size: 152% 100%;
-    background: #004A7C;
-    border: 2px solid #004a7c;
+    background: #3700B3;
+    border: 2px solid #3700B3;
 }
 
 .btn:hover {
     background: transparent;
-    border-color: #004a7c;
-    color: #004a7c;
+    border-color: #3700B3;
+    color: #3700B3;
 }
 
 
@@ -64,13 +66,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color:#0a0a0a;
+    color:#6200EE;
     position: relative;
     padding: 5px 0;
 }
 
 nav ul li a:hover {
-    color: #004A7C;
+    color: #3700B3;
 }
 
 nav ul li a:after {
@@ -79,7 +81,7 @@ nav ul li a:after {
     left: 0;
     width: 0;
     height: 3px;
-    background: #004a7c;
+    background: #6200EE;
     transition: 0.3s;
     bottom: 0;
 }
@@ -95,16 +97,9 @@ main {
     top: 30%;
     left: 8%;
 }
-    
-.banner p {
-    width: 55%;
-    color: #202020;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
 
 .banner h1 {
-    color: #1f1f25;
+    color: #28282B;
     font-size: 40px;
     font-weight: 900;
     line-height: 70px;
@@ -113,8 +108,12 @@ main {
   
 }
 
+.banner span {
+    color: #6200EE;
+}
+
 .about h2 a, .projects h2 a {
-    color: #004A7C;
+    color: #3700B3;
     font-size: 20px;
     font-weight: 800;
     margin-top: 20px;
@@ -123,11 +122,13 @@ main {
 }
 
 .about p {
-    color: #202020;
+    color: #000;
     font-size: 16px;
     width: 55%;
     margin-top: 15px;
     margin-bottom: 25px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 
