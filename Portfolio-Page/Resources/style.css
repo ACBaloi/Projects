@@ -136,24 +136,25 @@ main {
 }
 */
 
+
 .card {
-    max-width: 15%;
-    max-height: 5%;
+    max-width: 20%;
+    max-height: auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 10px;
     transition: 0.3s;
-}
+   }
 
-.card:hover {
+  .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transform: translate(0px, -3px);
-}
+   }
 
-.container {
+  .container {
     padding: 2px 16px;
-}
+  }
 
-.card-img {
+  .card-img {
     border-radius: 0.5rem 0.5rem 0 0;
     width: 100%;
   }
