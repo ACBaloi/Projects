@@ -10,7 +10,7 @@
 }
 
 body {
-    background: color #faf9f6;;
+    background: color #faf9f6;
 } 
 
 a {
@@ -178,5 +178,24 @@ main {
   .card-img ~ * {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  /*----Footer----*/
+  
+  .social-icons {
+    display: flex;
+    margin-top: 0.5rem;
+  }
+  
+  .social-icons a {
+    width: 45px;
+    height: 35px;
+    color: linear-gradient(45deg,  #3700B3, #6200EE);
+    line-height: 35px;
+    transition: 0.3s;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.05);
   }
 
