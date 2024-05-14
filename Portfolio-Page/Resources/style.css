@@ -1,7 +1,5 @@
 /*-----Universal Styles-----*/
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -180,8 +178,6 @@ main {
     margin-right: 1rem;
   }
 
-  /*----Footer----*/
-  
   .social-icons {
     display: flex;
     margin-top: 0.5rem;
@@ -199,3 +195,10 @@ main {
     transform: scale(1.05);
   }
 
+
+  /*----Footer----*/
+  
+  .footer-copyright {
+    display: flex;
+    align-items: center;
+  }
