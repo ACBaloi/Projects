@@ -178,9 +178,12 @@ main {
     margin-right: 1rem;
   }
 
+  .social-icons i {
+    font-size: 24px;
+  }
   .social-icons {
     display: flex;
-    margin-top: 0.5rem;
+    margin-top: 15px;
   }
   
   .social-icons a {
@@ -200,5 +203,8 @@ main {
   
   .footer-copyright {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
   }
