@@ -8,7 +8,7 @@ app.get('/', (request, response)=>{
 });
 
 //Express error handling middleware
-app.use((request, response)=>{
+app.use((request, response)=> {
     response.type('text/plain');
     response.status(505);
     response.send('Error page');
