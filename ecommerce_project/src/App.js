@@ -2,20 +2,22 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Navbar from './Components/Navbar';
+import ProductList from './Components/ProductList';
+import Cart from './Components/Cart';
+import Details from './Components/Details';
+import Default from './Components/Default';
 
 function App() {
   return (
     <div className="App">
-      <div className='container'>
-        <div className='row'>
-          <div className='col-6'>column number one</div>
-          <div className='col-6'>
-            <span>
-              <i className='fab fa-facebook'></i>
-            </span>
-          </div>
-        </div>
-      </div>
+      <React.Fragment>
+        <Navbar />
+        <ProductList />
+        <Details />
+        <Cart />
+        <Default />
+      </React.Fragment>
     </div>
   );
 }
