@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Resources/contacto.css" />
+    <link rel="stylesheet" href="./Resources/style.css" />
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="./Resources/Images/apple-touch-icon.png">
@@ -14,70 +14,53 @@
     <link rel="manifest" href="./Resources/Images/site.webmanifest">
   </head>
   <body>
-    <div class="container">
-      <!--Left Side-->
-      <div class="form">
-        <div class="contact-info">
-          <h3 class="title">Let's get in touch</h3>
-          <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            dolorum adipisci recusandae praesentium dicta!
-          </p>
-
-          <div class="info">
-            <div class="information">
-              <i class="fas fa-envelope"></i> &nbsp &nbsp
-              <p>anacajingue@gmail.com</p>
-            </div>
-            <div class="information">
-              <i class="fas fa-phone"></i>&nbsp &nbsp
-              <p>+258860162671</p>
-            </div>
+    <!--Header-->
+    <header>
+      <nav>
+          <div class="logo">
+            <img src="C:\Users\EDM\Projects\Portfolio-Page\Resources\Images\Logo.png"  alt="logo" class="logo"/>
           </div>
-
-          <div class="social-media">
-            <p>Connect with us :</p>
-            <div class="social-icons">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </div>
+          <ul>
+              <li>
+                <a href="C:/Users/EDM/Projects/Portfolio-Page/index.html">Página Inicial</a>
+              </li>
+              <li>
+                <a href="#Sobre">Sobre</a>
+              </li>
+              <li>
+                <a href="#Projectos">Projectos</a>
+              </li>
+              <li>
+                <a href="contacto.html" target="_blank">Contacto</a>
+              </li>
+          </ul>
+          <a href="#" class="btn" target="_blank">Curriculum Vitae</a>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <h1><span>Ana Baloi</span></h1>
+        <p>Tem um projecto interessante? Vamos falar.</p>
+      </section>
+      <section class="social-media">
+        <div class="social-icons">
+          <a href="#" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-codepen"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
-      <!--Rigth Side-->
-        <div class="contact-form">
-          <form action="contacto.html" autocomplete="off">
-            <h3 class="title">Contact us</h3>
-            <div class="input-container">
-              <input type="email" name="email" class="input" />
-              <label for="">Email</label>
-              <span>Email</span>
-            </div>
-            <div class="input-container">
-              <input type="tel" name="phone" class="input" />
-              <label for="">Telefone</label>
-              <span>Telefone</span>
-            </div>
-            <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
-              <label for="">Mensagem</label>
-              <span>Mensagem</span>
-            </div>
-            <input type="submit" value="Enviar" class="btn" />
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <script src="app.js"></script>
+      </section>
+    </main>
   </body>
 </html>
