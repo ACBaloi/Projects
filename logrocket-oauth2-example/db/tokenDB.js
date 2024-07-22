@@ -15,7 +15,7 @@ function saveAccessToken(accessToken, userID, cbFunc) {
     pgPool.query(getUserQuery, (response) => {
         cbFunc(response.error);
     });
-}
+};
 
 function getUserIDFromBearerToken(bearerToken, cbFunc) {
     const getUserIDQuery = `SELECT * FROM access_tokens WHERE access_token ='${bearerToken}';`;
