@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Favicon-->
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <!--CSS-->
     <link rel="stylesheet" type="text/css" href="Resources/style.css">
     <title>Ana Jéssica Baloi</title>
     <!--Google Fonts-->
@@ -19,66 +16,62 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./Resources/Images/favicon-16x16.png">
     <link rel="manifest" href="./Resources/Images/site.webmanifest">
 </head>
-    <body>
-        <!--Header-->
-        <header>
-            <nav>
-                <div class="logo">
-                  <img src="C:\Users\EDM\Projects\Portfolio-Page\Resources\Images\Logo.png"  alt="logo" class="logo"/>
-                </div>
-                <ul>
-                    <li>
-                      <a href="C:\Users\EDM\Projects\Portfolio-Page\Resources\Images\The Bible.jpg">Página Inicial</a>
-                    </li>
-                    <li>
-                      <a href="#about">Sobre Mim</a>
-                    </li>
-                    <li>
-                      <a href="#projects">Projectos</a>
-                    </li>
-                    <li>
-                      <a href="contacto.html" target="_blank">Contacto</a>
-                    </li>
-                </ul>
-                <a href="#" class="btn" target="_blank">Curriculum Vitae</a>
-            </nav>
-        </header>
-        <!--Main-->
-        <main>
-            <div class="banner">
-              <h1>Olá, sou <span>Ana Baloi</span></h1>
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./Resources/Images/Logo.png" alt="logo image" class="logo"/>
             </div>
-            <section class="about">
-              <h2>
-                <a href="#about">Sobre mim</a>
-              </h2>
-              <p> Olá! O meu nome é Ana Jéssica Baloi e estou iniciando uma jornada como desenvolvedora Full Stack. Desde pequena que sinto uma atracção pela programação. Contudo segui pelo caminho da engenharia electrónica que levou-me a estagiar numa <span><a href="https://www.aeroportos.co.mz/en/" target="_blank"> empresa de aviação</a></span>, e depois ao norte de Moçambique para pertencer a um grupo de jovens que   seriam <span><a href="https://www.getfieldready.com/" target="_blank">treinados para trabalhar na indústria</a></span> e mais tarde ao departamento de instrumentação em uma <span><a href="https://www.kenmareresources.com/en" target="_blank">empresa de mineração</a></span>. A minha familia tem sido o meu foco nos últimos anos.</p>
-            </section>
-            <section class="projects">
-              <h2>
-                <a href="#projects">Projectos</a>
-              </h2>
-                <div class="card">
-                  <div class="card-container">
-                    <img alt="Mixed Messages image" class="card-img">
-                      <div class="card-textbox">
+            <div class="navbar-links">
+              <ul>
+                  <li><a href="#about">Sobre Mim</a></li>
+                  <li><a href="#projects">Projectos</a></li>
+                  <li><a href="contacto.html" target="_blank">Contacto</a></li>
+              </ul>
+            </div>
+            <a href="#" class="btn" target="_blank">Curriculum Vitae</a>
+            <div>
+                <a href="#" class="toggle-button">
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!--Main-->
+    <main>
+        <div class="banner">
+            <h1>Olá, sou <span>Ana Baloi</span></h1>
+        </div>
+        <section class="about">
+            <h2><a href="#about">Sobre mim</a></h2>
+            <p>Olá! O meu nome é Ana Jéssica Baloi e estou iniciando uma jornada como desenvolvedora Full Stack. Desde pequena que sinto uma atracção pela programação. Contudo segui pelo caminho da engenharia electrónica que levou-me a estagiar numa <span><a href="https://www.aeroportos.co.mz/en/" target="_blank">empresa de aviação</a></span>, e depois ao norte de Moçambique para pertencer a um grupo de jovens que seriam <span><a href="https://www.getfieldready.com/" target="_blank">treinados para trabalhar na indústria</a></span> e mais tarde ao departamento de instrumentação em uma <span><a href="https://www.kenmareresources.com/en" target="_blank">empresa de mineração</a></span>. A minha família tem sido o meu foco nos últimos anos.</p>
+        </section>
+        <section class="projects">
+            <h2><a href="#projects">Projectos</a></h2>
+            <div class="card">
+                <div class="card-container">
+                    <img src="./Resources/Images/mixed-messages.jpg" alt="Mixed Messages project image" class="card-img">
+                    <div class="card-textbox">
                         <a href="#">Mixed Messages</a>
                         <i class="fa fa-arrow-up" aria-hidden="true"></i>
                         <p class="card-text">Este projecto é um simples gerador de textos biblícos.</p>
-                      </div>
-                  </div>
+                    </div>
                 </div>
-            </section>
-        </main>
-        <!--Footer-->
-        <footer>
-          <div class="footer-container">
-              <div class="footer-copyright">
-                <p>Feito com <i class="fa fa-heart-o" aria-hidden="true"></i> em Maputo</p>
-                <div>&copy 2024 Ana Baloi</div>
-              </div>
             </div>
-          </div>
-        </footer>
-    </body>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-copyright">
+                <p>Feito com <i class="fa fa-heart-o" aria-hidden="true"></i> em Maputo</p>
+                <div>&copy; 2024 Ana Baloi</div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>

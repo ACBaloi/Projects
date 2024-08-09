@@ -1,22 +1,21 @@
 /*-----Universal Styles-----*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Inter, Arial, Helvetica, sans-serif;  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Arial, Helvetica, sans-serif;  
 }
 
 body {
-    background: color #faf9f6;
-} 
-
-a {
-    text-decoration: none;
-    color: #6200EE;
-    font-weight: 500;
+  background-color: #faf9f6;
 }
 
+a {
+  text-decoration: none;
+  color: #6200EE;
+  font-weight: 500;
+}
 
 .btn {
   color: #fff;
@@ -38,106 +37,128 @@ a {
   background: transparent;
   border-color: #3700B3;
   color: #3700B3;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-color 0.4s ease-in-out;
 }
-
 
 /*---Header---*/
 
 header {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
+  width: 100%;
+  height: 30vh;
 }
 
 .logo img {
-    max-height: 90px;
+  max-height: 90px;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2% 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 8%;
 }
 
 nav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 6px 20px;
+  list-style: none;
+  display: inline-block;
+  padding: 6px 20px;
 }
 
 nav ul li a {
-    color:#6200EE;
-    position: relative;
-    padding: 5px 0;
+  color:#6200EE;
+  position: relative;
+  padding: 5px 0;
 }
 
 nav ul li a:hover {
-    color: #3700B3;
+  color: #3700B3;
 }
 
 nav ul li a:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: #6200EE;
-    transition: 0.3s;
-    bottom: 0;
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #6200EE;
+  transition: 0.3s;
+  bottom: 0;
 }
 
 nav ul li a:hover::after {
-    width: 100%;
+  width: 100%;
 }
+
+.toggle-button {
+  float: right;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  background-color: #3700B3;
+  border-radius: 10px;
+    &:nth-of-type(1) {
+        /*top: 15px;*/
+        width: 75%;
+    }
+    &:nth-of-type(2) {
+        /*top: 23px;*/
+        width:45%;
+    }
+    &:nth-of-type(3) {
+        /*top: 31px;*/
+        width: 75%;
+    }
+}
+
 
 /*---Main---*/
 
 main {
-    position: absolute;
-    top: 30%;
-    left: 8%;
+  position: relative; /* Adjust according to your layout needs */
+  top: 30%; /* Consider using media queries for responsiveness */
+  left: 8%;
 }
 
 .banner h1 {
-    color: #28282B;
-    font-size: 2.5rem;
-    font-weight: 900;
-    line-height: 4.375rem;
-    text-transform: inherit;
-    width: 100%; 
-  
+  color: #28282B;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 4.375rem;
+  text-transform: inherit;
+  width: 100%;   
 }
 
 .banner span {
-    background-image: linear-gradient(90deg, rgba(94,114,235,1) 0%, rgba(255,145,144,1) 56%, rgba(254,193,149,1) 100%);
-    color: transparent;
-    -webkit-background-clip: text;
-    }
-      
-    @keyframes move {
-        50% {
-          background-image: linear-gradient(262deg, rgba(94,114,235,1) 0%, rgba(255,145,144,1) 56%, rgba(254,193,149,1) 100%);
-        }
-    }
+  background-image: linear-gradient(90deg, rgba(94,114,235,1) 0%, rgba(255,145,144,1) 56%, rgba(254,193,149,1) 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: move 5s linear infinite;
+} 
 
 h2, .about h2 a, .projects h2 a {
-    color: #3700B3;
-    font-size: 1.25rem;
-    font-weight: 800;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 50%;   
+  color: #3700B3;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;   
 }
 
 .about p {
-    color: #000;
-    font-size: 1rem;
-    width: 55%;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    text-align: justify;
-    text-justify: inter-word;
+  color: #000;
+  font-size: 1rem;
+  width: 55%;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /*.about h2 a, .about p {
@@ -146,85 +167,155 @@ h2, .about h2 a, .projects h2 a {
 */
 
 .card {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 10px;
-    transition: 0.3s;
-    margin-top: 20px;
-   }
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
 
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    transform: translate(0px, -3px);
-   }
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: translate(0px, -3px);
+}
 
-  .card-container {
-    display: flex;
-  }
+.card-container {
+  display: flex;
+  align-items: stretch; /* Ensures that both image and text are vertically aligned */
+}
 
-  .card-textbox {
-    padding: 2px 16px;
-    width: 70%;
-  }
+.card-img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 30%;
+  flex: 0 0 30%; /* Ensures the image takes up 30% of the card width */
+}
 
-  .card-img {
-    border-radius: 0.5rem 0.5rem 0 0;
-    width: 30%;
-  }
+.card-textbox {
+  padding: 2px 16px;
+  width: 70%;
+  flex: 1; /* Takes the remaining width */
+}
   
-  .card-img ~ * {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+.card-img ~ * {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
-  .social-icons i {
-    font-size: 1.5rem;
-  }
-  .social-icons {
-    display: flex;
-    margin-top: 15px;
-  }
+.social-icons i {
+  font-size: 1.5rem;
+}
   
-  .social-icons a {
-    width: 45px;
-    height: 35px;
-    color: linear-gradient(45deg,  #3700B3, #6200EE);
-    line-height: 35px;
-    transition: 0.3s;
-  }
-  
-  .social-icons a:hover {
-    transform: scale(1.05);
-  }
+.social-icons {
+  display: flex;
+  margin-top: 15px;
+}
 
-  form {
-    display:flex;
-    flex-direction: column;
-    align-items: baseline;
-  }
+.social-icons a {
+  width: 45px;
+  height: 35px;
+  background: linear-gradient(45deg, #3700B3, #6200EE);
+  color: #fff; /* Ensure icon colors are visible against the gradient */
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
 
-  form label {
-    margin-top: 10px;
-    font-weight: 500;
-  }
+.social-icons a:hover {
+  transform: scale(1.05);
+}
 
-  form input, form textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #6200EE;
-    border-radius: 5px;
-  }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+
+form input, form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #6200EE;
+  border-radius: 5px;
+}
 
   /*----Footer----*/
   
-  .footer-copyright {
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+
+/*----Media Queries---*/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .toggle-button {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 0.75rem;
-    font-weight: 600;
   }
+
+  nav ul li {
+    display: none;
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+/*
+  nav li {
+    text-align: center;
+  }
+
+*/
+/*
+  nav ul li a {
+    padding: .5rem 1rem;
+  }
+*/
+
+/*
+  nav:active {
+    display: flex;
+  }
+
+*/
+
+
+  .btn {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+  
+}
