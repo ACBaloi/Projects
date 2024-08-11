@@ -17,7 +17,7 @@ a {
   font-weight: 500;
 }
 
-.btn {
+.btn , .btn-submit, .btn-cv {
   color: #fff;
   font-size: 1rem;
   text-transform: uppercase;
@@ -33,7 +33,25 @@ a {
   margin-top: 1rem;
 }
 
+.btn-cv {
+  display: none;
+}
+
 .btn:hover {
+  background: transparent;
+  border-color: #3700B3;
+  color: #3700B3;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+
+.btn-cv:hover {
+  background: transparent;
+  border-color: #3700B3;
+  color: #3700B3;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+
+.btn-submit:hover {
   background: transparent;
   border-color: #3700B3;
   color: #3700B3;
@@ -58,23 +76,23 @@ nav {
   padding: 2% 8%;
 }
 
-nav ul li {
+.navbar-links ul li {
   list-style: none;
   display: inline-block;
   padding: 6px 20px;
 }
 
-nav ul li a {
+.navbar-links ul li a {
   color:#6200EE;
   position: relative;
   padding: 5px 0;
 }
 
-nav ul li a:hover {
+.navbar-links ul li a:hover {
   color: #3700B3;
 }
 
-nav ul li a:after {
+.navbar-links ul li a:after {
   content: '';
   position: absolute;
   left: 0;
@@ -85,11 +103,12 @@ nav ul li a:after {
   bottom: 0;
 }
 
-nav ul li a:hover::after {
+.navbar-links ul li a:hover::after {
   width: 100%;
 }
 
 .toggle-button {
+  position: absolute;
   float: right;
   display: none;
   flex-direction: column;
@@ -120,8 +139,8 @@ nav ul li a:hover::after {
 /*---Main---*/
 
 main {
-  position: relative; /* Adjust according to your layout needs */
-  top: 30%; /* Consider using media queries for responsiveness */
+  position: relative;
+  top: 30%; 
   left: 8%;
 }
 
@@ -151,7 +170,18 @@ h2, .about h2 a, .projects h2 a {
   width: 50%;   
 }
 
-.about p {
+.banner p {
+  color: #28282B;
+  display: none;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+#intro {
+  color: #6200EE;
+}
+
+.about p, .intro p {
   color: #000;
   font-size: 1rem;
   width: 55%;
@@ -160,11 +190,6 @@ h2, .about h2 a, .projects h2 a {
   text-align: justify;
   text-justify: inter-word;
 }
-
-/*.about h2 a, .about p {
-    display: none;
-}
-*/
 
 .card {
   display: flex;
@@ -215,8 +240,8 @@ h2, .about h2 a, .projects h2 a {
 .social-icons a {
   width: 45px;
   height: 35px;
-  background: linear-gradient(45deg, #3700B3, #6200EE);
-  color: #fff; /* Ensure icon colors are visible against the gradient */
+  background: transparent;
+  color: #3700B3; /* Ensure icon colors are visible against the gradient */
   line-height: 35px;
   display: flex;
   align-items: center;
@@ -266,43 +291,62 @@ form input, form textarea {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  /*---Header---*/
+
+  .logo img {
+    margin-top: 20%;
+  }
   .toggle-button {
     display: flex;
-  }
-
-  nav ul li {
+  }  
+  
+  .navbar-links {
     display: none;
-    width: 100%;
-  }
-
-  nav ul {
-    width: 100%;
-    flex-direction: column;
   }
   
-/*
-  nav li {
-    text-align: center;
-  }
-
-*/
-/*
-  nav ul li a {
-    padding: .5rem 1rem;
-  }
-*/
-
-/*
-  nav:active {
-    display: flex;
-  }
-
-*/
-
-
   .btn {
     display: none;
   }
+
+  /*---Main---*/
+
+  .banner h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .banner p {
+    display: inline;
+  }
+
+  .about p {
+    font-size: 1rem;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  .btn-cv {
+    display: flex;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+    
+  form input, form textarea {
+    width: 80%;
+  }
+
+  .footer-copyright {
+    display: none;
+  }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

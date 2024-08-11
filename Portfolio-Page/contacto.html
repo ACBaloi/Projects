@@ -18,27 +18,48 @@
     <header>
       <nav>
           <div class="logo">
-            <img src="C:\Users\EDM\Projects\Portfolio-Page\Resources\Images\Logo.png"  alt="logo" class="logo"/>
+            <img src=".\Resources\Images\Logo.png"  alt="logo" class="logo"/>
           </div>
-          <ul>
-              <li>
-                <a href="C:/Users/EDM/Projects/Portfolio-Page/index.html">Página Inicial</a>
-              </li>
-              <li>
-                <a href="#Sobre">Sobre</a>
-              </li>
-              <li>
-                <a href="#Projectos">Projectos</a>
-              </li>
-          </ul>
-          <a href="#" class="btn" target="_blank">Curriculum Vitae</a>
+          <div class="navbar-links">
+            <ul>
+                <li><a href="./index.html">Página Inicial</a></li>
+                <li><a href="./index.html/#about">Sobre</a></li>
+                <li><a href="./index.html/#projects">Projectos</a></li>
+            </ul>
+          </div>
+          <a href="./Resources/Ana Cajingue - CV.pdf" class="btn" target="_blank">Curriculum Vitae</a>
+          <div>   
+            <a href="#" class="toggle-button">
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+            </a>
+        </div>
       </nav>
     </header>
     <main>
       <section class="banner">
-        <h1><span>Ana Baloi</span></h1>
         <p>Tem um projecto interessante? Vamos falar.</p>
       </section>
+
+      <section class="section"> 
+        <div class="container">
+          <h2>Contacto</h2>
+          <form action="#">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn-submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+
       <section class="social-media">
         <div class="social-icons">
           <a href="https://www.facebook.com/acajingue" target="_blank">
@@ -56,25 +77,6 @@
         </div>
       </section>
 
-      <section class="section"> 
-        <div class="container">
-          <h2>Contacto</h2>
-          <form action="#">
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensagem</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit" class="btn">Enviar</button>
-          </form>
-
-        </div>
-
-      </section>
     </main>
 
     <script src="script.js"></script>
