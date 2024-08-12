@@ -135,7 +135,6 @@ nav {
     }
 }
 
-
 /*---Main---*/
 
 main {
@@ -241,7 +240,7 @@ h2, .about h2 a, .projects h2 a {
   width: 45px;
   height: 35px;
   background: transparent;
-  color: #3700B3; /* Ensure icon colors are visible against the gradient */
+  color: #3700B3; 
   line-height: 35px;
   display: flex;
   align-items: center;
@@ -263,7 +262,6 @@ form label {
   margin-top: 10px;
   font-weight: 500;
 }
-
 
 form input, form textarea {
   box-sizing: border-box;
@@ -288,10 +286,9 @@ form input, form textarea {
 
 /*----Media Queries---*/
 
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  /*---Header---*/
+  /*--Header--*/
 
   .logo img {
     margin-top: 20%;
@@ -308,7 +305,7 @@ form input, form textarea {
     display: none;
   }
 
-  /*---Main---*/
+  /*--Main--*/
 
   .banner h1 {
     font-size: 2rem;
@@ -332,6 +329,7 @@ form input, form textarea {
     width: 50%;
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: .75rem;
   }
 
   .card {
@@ -342,6 +340,8 @@ form input, form textarea {
   form input, form textarea {
     width: 80%;
   }
+
+  /*--Footer--*/
 
   .footer-copyright {
     display: none;
