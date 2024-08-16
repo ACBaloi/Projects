@@ -1,15 +1,19 @@
 //contacto.html
-
+/*
 document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('Mensagem enviada com sucesso!');
 });
+*/
 
 //index.html
 
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex';
+}
 
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
-})
+function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none';
+}

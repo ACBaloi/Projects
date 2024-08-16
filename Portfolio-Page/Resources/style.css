@@ -131,12 +131,12 @@ nav {
   top: 0;
   right: 0;
   height: 100vh;
-  width: 250px;
+  width: 200px;
   z-index: 999;
   background-color: #faf9f673;
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0,0,0,0.1);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -145,12 +145,24 @@ nav {
 .sidebar li {
   width: 100%;
   list-style: none;
-  padding: 30px;
+  padding: 15px;
   margin-top: 40%;
+}
+
+.sidebar ul {
+  width: 100%;
+}
+
+.sidebar li:hover {
+  background-color: #faf9f6;
 }
 
 .sidebar a {
   width: 100%;
+}
+
+ul li a svg {
+  display: none;
 }
 /*---Main---*/
 
@@ -313,6 +325,10 @@ form input, form textarea {
   .toggle-button {
     display: flex;
   }  
+
+  ul li a svg {
+    display: flex;
+  }
   
   .navbar-links {
     display: none;
