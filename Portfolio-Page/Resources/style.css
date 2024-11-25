@@ -312,6 +312,13 @@ form input, form textarea {
   font-weight: 600;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
 
 /*----Media Queries---*/
 
