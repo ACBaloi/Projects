@@ -1,12 +1,4 @@
-//contacto.html
-/*
-document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Mensagem enviada com sucesso!');
-});
-*/
-
-//index.html
+const nav = document.querySelector(".navbar-links");
 
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar')
@@ -17,3 +9,4 @@ function hideSidebar() {
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none';
 }
+

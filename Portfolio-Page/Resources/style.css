@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Inter, Arial, Helvetica, sans-serif;  
+  list-style: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -79,10 +81,15 @@ header {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2% 8%;
+  z-index: 1000;
+  background-color: #faf9f6;
 }
 
 .navbar-links ul li {
@@ -337,6 +344,7 @@ form input, form textarea {
   text-align: center;
   font-size: 0.75rem;
   font-weight: 600;
+  padding-top: 2rem;
 }
 
 /*----Media Queries---*/
