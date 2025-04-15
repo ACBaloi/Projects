@@ -24,10 +24,15 @@
               "RelativeDocumentMoniker": "Portfolio-Page\\index.html",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Projects\\Portfolio-Page\\index.html",
               "RelativeToolTip": "Portfolio-Page\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD0AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-04-11T13:32:13.355Z",
+              "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

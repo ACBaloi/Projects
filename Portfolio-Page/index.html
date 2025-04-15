@@ -15,6 +15,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./Resources/Images/favicon-16x16.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=chevron_right" />
     <link rel="manifest" href="./Resources/Images/site.webmanifest">
+    <!--Social Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <!--Header-->
@@ -48,9 +50,13 @@
               </div>
         </nav>
     </header>
+
     <!--Main-->
     <main>
         <div class="banner">
+            <section id="home">
+                <img src="image.jpg" alt="" />
+            </section>
             <h1>Olá, sou <span>Ana Jéssica</span></h1>
             <p>Sou uma <span id="intro">engenheira electrónica <br></span>
                aprendendo a transformar <br> ideias em websites.
@@ -59,47 +65,61 @@
         </div>
         <section class="about">
             <h2>Sobre mim</h2>
-            <p>O meu nome é Ana Jéssica Baloi e estou iniciando uma jornada como desenvolvedora Full Stack. Ocupo uma posição no depertamento de finanças e marketing na <span><a href="https://www.seggolas.co.mz/" target="_blank">Seggolas Multiserviços</a></span>. Desde pequena que sinto uma atracção pela programação. A minha formação em engenharia electrónica que levou-me a estagiar numa <span><a href="https://www.aeroportos.co.mz/en/" target="_blank">empresa de aviação</a></span>, e depois ao norte de Moçambique para pertencer a um grupo de jovens que seriam <span><a href="https://www.getfieldready.com/" target="_blank">treinados para trabalhar na indústria</a></span> e mais tarde ao departamento de instrumentação em uma <span><a href="https://www.kenmareresources.com/en" target="_blank">empresa de mineração</a></span> contribuir para a minha comunidade.</p>
+            <p>O meu nome é Ana Jéssica Baloi, sou formada em engenharia electrónica e estou iniciando uma jornada como desenvolvedora Full Stack com a stack PERN (PostgreSQL, Express, React, Node). A minha formação em electrónica levou-me a estagiar numa <span><a href="https://www.aeroportos.co.mz/en/" target="_blank">empresa de aviação</a></span>, e depois ao norte de Moçambique para pertencer a um grupo de jovens que seriam <span><a href="https://www.getfieldready.com/" target="_blank">treinados para trabalhar na indústria</a></span> e mais tarde ao departamento de instrumentação em uma <span><a href="https://www.kenmareresources.com/en" target="_blank">empresa de mineração</a></span>.Do momento, ocupo uma posição no depertamento de finanças e marketing na <span><a href="https://www.seggolas.co.mz/" target="_blank">Seggolas Multiserviços</a></span>.</p>
+            <p>Nos meus tempos livres estudo a religião, filosofia e mundo moderno, faço paisagismo, e preparo doces e pizzas para os meus entes queridos!</p>
             <h2>Skills</h2>
             <div class="skills">
                 <ul>
                     <li>
-                        <span> <span class="material-symbols-outlined">
-                            chevron_right
-                            </span>HTML</span>
+                        <span>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>HTML
+                        </span>
                     </li>
                     <li>
-                        <span><span class="material-symbols-outlined">
-                            chevron_right
-                            </span>CSS</span>
+                        <span>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>CSS
+                        </span>
                     </li>
                     <li>
-                        <span><span class="material-symbols-outlined">
-                            chevron_right
-                            </span>JavaScript</span>
+                        <span>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>JavaScript
+                        </span>
                     </li>
                 </ul>
 
                 <ul>
                     <li>
-                        <span><span class="material-symbols-outlined">
-                            chevron_right
-                            </span>React</span>
+                        <span>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>React
+                        </span>
                     </li>
                     <li>
-                        <span><span class="material-symbols-outlined">
-                            chevron_right
-                            </span>Node</span>
+                        <span>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>Node
+                        </span>
                     </li>
                     <li>
-                        <span><span class="material-symbols-outlined">
-                            chevron_right
-                            </span>Postgres</span>
+                        <span>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>PostgreSQL
+                        </span>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="projects">
+
+        <section id="projects">
             <h2>Projectos</h2>
             <div class="card">
                 <div class="card-container">
@@ -113,9 +133,22 @@
             </div>
         </section>
     </main>
+
     <!--Footer-->
     <footer>
         <div class="footer-container">
+            <div class="social-icons">
+                 <a href="https://www.linkedin.com/in/anacajingue" target="_blank">
+                   <span>
+                      <i class='bx bxl-linkedin-square' style='color:#3700b3'></i>
+                   </span>
+                 </a>
+                 <a href="https://www.instagram.com/anacajingue/" target="_blank">
+                       <span>
+                         <i class='bx bxl-instagram-alt' style='color:#3700b3'></i>
+                       </span>
+                 </a>
+            </div>
             <div class="footer-copyright">
                 <p>Feito com amor em Maputo</p>
                 <div>&copy; 2024 Ana Baloi</div>

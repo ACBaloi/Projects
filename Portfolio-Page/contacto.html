@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
@@ -12,7 +12,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./Resources/Images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./Resources/Images/favicon-16x16.png">
     <link rel="manifest" href="./Resources/Images/site.webmanifest">
-  </head>
+    <!--Social Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
   <body>
     <!--Header-->
     <header>
@@ -24,15 +26,15 @@
             <ul>
               <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
               <li><a href="./index.html">Página Inicial</a></li>
-              <li><a href="./index.html/#about">Sobre</a></li>
-              <li><a href="./index.html/#projects">Projectos</a></li>
+              <li><a href="./index.html">Sobre Mim</a></li>
+              <li><a href="./index.html">Projectos</a></li>
             </ul>
           </div>
           <div class="navbar-links">
             <ul>
                 <li><a href="./index.html">Página Inicial</a></li>
-                <li><a href="./index.html/#about">Sobre Mim</a></li>
-                <li><a href="./index.html/#projects">Projectos</a></li>
+                <li><a href="./index.html">Sobre Mim</a></li>
+                <li><a href="./index.html">Projectos</a></li>
             </ul>
           </div>
           <a href="./Resources/Ana Cajingue - CV.pdf" class="btn" target="_blank">Curriculum Vitae</a>
@@ -55,13 +57,13 @@
           <h2>Contacto</h2>
           <form action="#">
             <label for="name">Nome</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" placeholder="Introduza o seu nome" id="name" name="name" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" placeholder="Introduza o seu email" id="email" name="email" required>
 
             <label for="message">Mensagem</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" placeholder="Escreva a sua mensagem" name="message" rows="5" required></textarea>
 
             <button type="submit" class="btn-submit">Enviar</button>
           </form>
@@ -69,20 +71,18 @@
       </section>
 
       <section class="social-media">
-        <div class="social-icons">
-          <a href="https://www.facebook.com/acajingue" target="_blank">
-            <span><i class="fab fa-facebook-f"></i></span>
-          </a>
-          <a href="https://codepen.io/Ana-J-ssica-Cajingue" target="_blank">
-           <span><i class="fab fa-codepen"></i></span> 
-          </a>
-          <a href="https://www.linkedin.com/in/anacajingue/" target="_blank">
-            <span><i class="fab fa-linkedin-in"></i></span>
-          </a>
-          <a href="https://github.com/ACBaloi" target="_blank">
-            <span><i class="fab fa-github"></i></span>
-          </a>
-        </div>
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/in/anacajingue" target="_blank">
+                  <span>
+                      <i class='bx bxl-linkedin-square' style='color:#3700b3'></i>
+                  </span>
+              </a>
+              <a href="https://www.instagram.com/anacajingue/" target="_blank">
+                  <span>
+                      <i class='bx bxl-instagram-alt' style='color:#3700b3'></i>
+                  </span>
+              </a>
+          </div>
       </section>
 
     </main>

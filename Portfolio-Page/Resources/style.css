@@ -202,7 +202,7 @@ main {
   animation: move 5s linear infinite;
 } 
 
-h2, .about h2 a, .projects h2 a {
+h2, .about h2 a, #projects h2 a {
   color: rgb(55, 0, 179);
   font-size: 1.25rem;
   font-weight: 800;
@@ -297,6 +297,7 @@ h2, .about h2 a, .projects h2 a {
 .social-icons {
   display: flex;
   margin-top: 15px;
+  margin-left: 90px;
 }
 
 .social-icons a {
@@ -396,13 +397,6 @@ form input, form textarea {
     text-align: left;
   }
 
-  .btn-cv {
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
   .card {
     width: 90%;
     margin-bottom: 40px;
@@ -422,27 +416,28 @@ form input, form textarea {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
-  /*--Header--*/
 
-  .logo img {
-    margin-top: 20%;
-  }
+    /*--Header--*/
 
-  .navbar-links {
-    margin-top: 6%;
-    margin-left: 15%;
-  }
+    .logo img {
+        margin-top: 20%;
+    }
 
-  .navbar-links ul li {
-    font-size: 0.9rem;
-    padding: 6px 9px;
-  }
+    .toggle-button {
+        display: flex;
+    }
 
-  .btn {
-    font-size: 0.6rem;  
-    margin-top: 6%;
-    padding: 2.5%;
-  }
+    ul li a svg {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
 
   /*--Main--*/
 
@@ -468,7 +463,13 @@ form input, form textarea {
     margin-bottom: 25px;
     text-align: left;
   }
-  
+
+  .btn-cv {
+        display: flex;
+        margin-top: 50px;
+        font-size: 0.7rem;
+        align-items:center;
+  }
   .card {
     width: 50%;
     margin-bottom: 40px;
@@ -494,7 +495,7 @@ form input, form textarea {
   }
 
   .navbar-links ul li {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 6px 9px;
   }
 
@@ -515,7 +516,7 @@ form input, form textarea {
   }
 
   .card {
-    width: 30%;
+    width: 50%;
     margin-bottom: 40px;
   }
     
